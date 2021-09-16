@@ -8,21 +8,21 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="author" content="Tushar Singh">
     <meta property="dc:creator" content="Tushar Singh">
-    <meta name="title" content="">
-    <meta name="og:title" content="">
+    <meta name="title" content="Personal Portfolio">
+    <meta name="og:title" content="Personal Portfolio">
     <meta name="type" content="website">
     <meta name="og:type" content="website">
-    <meta name="description" content="">   
-    <meta name="og:description" content="">
-    <meta name="image" content="">
-    <meta name="og:image" content="">
-    <meta name="url" content="">
-    <meta name="og:url" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Website for submission in WebJam organised by CSI-DYPIEMR in collaboration with EDC.">   
+    <meta name="og:description" content="Website for submission in WebJam organised by CSI-DYPIEMR in collaboration with EDC.">
+    <meta name="image" content="./images/logo.png">
+    <meta name="og:image" content="./images/logo.png">
+    <meta name="url" content="webjam.netlify.app">
+    <meta name="og:url" content="webjam.netlify.app">
+    <meta name="keywords" content="Personal, Portfolio, WebJam, Hackathon, ">
 
     <title>WebJam | Tushar Singh</title>
 
-    <!--LOGO--><link rel="shortcut icon" href="">
+    <!--LOGO--><link rel="shortcut icon" href="./images/logo.png">
     <!--STYLESHEET--><link rel="stylesheet" href="css/index.css">
     <!--FONT AWESOME--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -37,6 +37,7 @@
                 <div class="website-logo"></div>
                 <nav class="desktop-view">
                     <ul>
+                        <li><a href="#Landing">Landing</a></li>
                         <li><a href="#About">About</a></li>
                         <li><a href="#Skills">Skills</a></li>
                         <li><a href="#Projects">Projects</a></li>
@@ -74,8 +75,8 @@
             <div class="container">
                 <div class="main-section">
                     <div>
-                        <h1>Hey! I'm Eric</h1>
-                        <h1>Holzman</h1>
+                        <h1>Hey! I'm Tushar</h1>
+                        <h1>Singh</h1>
                         <p>Freelancer,  Web Developer,  App developer and Visual Product Designer.</p>
                     </div>
                     <div class="illustration"></div>
@@ -187,7 +188,7 @@
                     <div>
                         <div style="padding-bottom: 32px;"><h1 class="article-heading">CONTACT ME</h1></div>
                         <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque id perspiciatis, delectus voluptatum excepturi vel unde similique labore maiores.</p>
-                        <form action="">
+                        <form action="" id="ContactForm">
                             <div>
                                 <label for="">Name</label>
                                 <p><input id="input-field-name" type="name" name="name" placeholder="Enter Your Name"></p>
@@ -211,6 +212,15 @@
         </article>
 
     </main>
+
+    <!-- Success Message Pop Up -->
+
+    <div id="SuccessMessage" class="closeSuccessMessage">
+        <div class="message">
+            <h1><span><i class="fa fa-check"></i></span> Message Sent</h1>
+            <p>Your Message has been Successfully recorded ! <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+        </div>
+    </div>
 
     <!-- Footer -->
 
@@ -243,4 +253,5 @@
     <script type="text/javascript" src="js/smooth_scroll.js"></script>
 
 </body>
+
 </html>
