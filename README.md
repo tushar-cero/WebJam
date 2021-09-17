@@ -1,4 +1,4 @@
-# WEBJAM
+# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEBJAM
 
 The website has been deployed on Netlify, check it out [here](http://webjam-portfolio-website.netlify.app/).
 
@@ -17,6 +17,8 @@ The Website is responsive across all devices and sizes with `smooth-scroll` navi
 
 The website uses `Vanilla JavaScript` to add functionality to the website such as - 
 - Hamburger Menu Pop Up from the bottom in Mobile View
+- Smooth Scroll on link click
+- Authentic social media color code on hover
 
 # Form Submission and Collection
 
