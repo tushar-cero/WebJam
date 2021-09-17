@@ -50,9 +50,11 @@ article{
 
 
 :root {
+    --blur-bgc: rgba(0, 0, 0, 0.75);
     --background-color: #101010;
     --border-color: rgb(49, 49, 49);
     --primary-color: #FF4C29;
+    --secondary-color: #FF4C29;
     --white-color: #fff;
     --dull-white-color: rgb(200, 200, 200); 
     --black-color: rgb(0, 0, 0);
@@ -236,7 +238,7 @@ header .header-flex button{
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: var(--blur-color);
+    background-color: var(--blur-bgc);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +252,7 @@ header .header-flex button{
     color: var(--white-color);
     background-color: var(--black-color);
     border-radius: 5px;
-    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    border: var(--border-color) 1px solid;
     animation: slideInFromBottom 0.4s ease-in;
 }
 .menu-container .menu .close-btn {
@@ -394,7 +396,7 @@ header .header-flex button{
     background-image: url('../images/about.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 250px;
     width: 350px;
 }
@@ -412,6 +414,13 @@ header .header-flex button{
     #About .about-grid .illustration{
         height: 325px;
         width: 400px;
+    }
+}
+
+@media(max-width: 450px){
+    #About .about-grid .illustration{
+        height: 325px;
+        width: 350px;
     }
 }
 
@@ -485,7 +494,8 @@ header .header-flex button{
 
 
 
-#Skills .skills-grid{
+#Skills .skills-grid,
+#Skills .tools-grid{
     padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
@@ -494,29 +504,62 @@ header .header-flex button{
     height: 100%;
     width: 100%;
 }
+
 #Skills .skills-grid .card{
-    margin: 32px;
+    max-width: 300px;
+    background-color: var(--white-color);
+    color: #4D585D;
+    padding: 0 32px 32px 32px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 16px;
 }
-#Skills .skills-grid .card,
+#Skills .skills-grid .card i,
+#Skills .skills-grid .card figure{
+    margin: 48px auto;
+    text-align: center;
+}
+#Skills .skills-grid .card i,
 #Skills .skills-grid .card figure,
 #Skills .skills-grid .card figure img{
+    height: 96px;
+    width: 96px;
+    font-size: 96px;
+}
+#Skills .skills-grid .card h1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+#Skills .skills-grid .card p{
+    text-align: left;
+    font-size: 14px;
+}
+
+#Skills .tools-grid .card{
+    margin: 32px;
+}
+#Skills .tools-grid .card,
+#Skills .tools-grid .card figure,
+#Skills .tools-grid .card figure img{
     height: 120px;
     width: 120px;
 }
 
 @media (max-width: 600px) {
-    #Skills .skills-grid .card,
-    #Skills .skills-grid .card figure,
-    #Skills .skills-grid .card figure img{
+    #Skills .tools-grid .card,
+    #Skills .tools-grid .card figure,
+    #Skills .tools-grid .card figure img{
         height: 80px;
         width: 80px;
     }
 }
 
 @media (max-width: 500px) {
-    #Skills .skills-grid .card,
-    #Skills .skills-grid .card figure,
-    #Skills .skills-grid .card figure img{
+    #Skills .tools-grid .card,
+    #Skills .tools-grid .card figure,
+    #Skills .tools-grid .card figure img{
         height: 60px;
         width: 60px;
     }
@@ -599,6 +642,13 @@ header .header-flex button{
     #Contact .contact-grid .illustration{
         height: 325px;
         width: 400px;
+    }
+}
+
+@media(max-width: 450px){
+    #Contact .contact-grid .illustration{
+        height: 325px;
+        width: 350px;
     }
 }
 
