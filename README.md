@@ -6,7 +6,7 @@ It is a Single-Page Web-Portfolio. It is divided into the following sections -
 1. Header
 2. Landing Section
 3. About Section
-4. Skills Section
+4. Skills and Profecient Tools Section
 5. Projects Showcase Section
 6. Contact Section
 7. Footer
