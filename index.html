@@ -210,7 +210,7 @@
                     <div>
                         <div style="padding-bottom: 32px;"><h1 class="article-heading">CONTACT ME</h1></div>
                         <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque id perspiciatis, delectus voluptatum excepturi vel unde similique labore maiores.</p>
-                        <form action="" id="ContactForm">
+                        <form id="ContactForm" name="contact" method="POST" data-netlify="true">
                             <div>
                                 <label for="">Name</label>
                                 <p><input id="input-field-name" type="name" name="name" placeholder="Enter Your Name"></p>
@@ -224,7 +224,7 @@
                                 <p><textarea id="input-field-message" placeholder="Say Hi !"></textarea></p>
                             </div>
                             <div class="btn-container">
-                                <button onclick="handleSubmit(this)" class="btn"><span style="padding-right: 8px;"><i class="fa fa-paper-plane-o"></i></span> Send</button>
+                                <button onclick="handleSubmit(this)" class="btn" type="submit"><span style="padding-right: 8px;"><i class="fa fa-paper-plane-o"></i></span> Send</button>
                             </div>
                         </form>
                     </div>
@@ -237,12 +237,12 @@
 
     <!-- Success Message Pop Up -->
 
-    <div id="SuccessMessage" class="closeSuccessMessage">
+    <!-- <div id="SuccessMessage" class="closeSuccessMessage">
         <div class="message">
             <h1><span><i class="fa fa-check"></i></span> Message Sent</h1>
             <p>Your Message has been Successfully recorded ! <i class="fa fa-smile-o" aria-hidden="true"></i></p>
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
 
@@ -282,9 +282,9 @@
 
 1. Pop up menu - style // ----------- DONE
 2. Improve Landing Background circle
-3. Add skills Cards
+3. Add skills Cards // ----------- DONE
 
-4. Include Netlify form collection
+4. Include Netlify form collection // ----------- DONE
 5. Edit Readme.md
 6. Edit resume for upload
 
